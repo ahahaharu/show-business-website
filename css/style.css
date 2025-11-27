@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --light-green: #2ad18a;
+  --black: #000;
+}
+
+body {
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 18px 24px;
+}
+
+.header__inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 229px;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: var(--light-green);
+  text-decoration: none;
+}
+
+.header__menu-list {
+  font-family: Inter;
+  font-weight: 400;
+  display: flex;
+  gap: 31px;
+}
+
+.header__menu-link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.header__menu-link:hover {
+  text-decoration: underline;
+}
+
+.header__button-container {
+  width: 229px;
+  display: flex;
+  justify-content: right;
+}
+
+.header__button {
+  background-color: var(--light-green);
+  border-radius: 8px;
+  border: none;
+  padding: 8px 24px;
+  font-family: Inter;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: #81fdc7;
+}
