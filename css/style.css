@@ -65,6 +65,7 @@ body {
   font-weight: 600;
   color: var(--light-green);
   text-decoration: none;
+  margin-left: 8px;
   margin-right: 35px;
 }
 
@@ -278,4 +279,51 @@ body {
 .grid-card__text {
   line-height: 1.6;
   letter-spacing: 0.1px;
+}
+
+.footer {
+  border-top: 1px #000 solid;
+  margin-top: 50px;
+}
+
+.footer__inner {
+  padding: 85px 0;
+}
+
+.footer__logo {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__item:not(:last-child)::after {
+  content: '/';
+  margin: 0 5px;
+  color: #000;
+}
+
+.footer__link {
+  text-decoration: none;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+  color: #000;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
