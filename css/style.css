@@ -1,6 +1,6 @@
 @font-face {
   font-family: Poppins;
-  src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: semibold;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Poppins;
-  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: medium;
   font-display: swap;
@@ -16,14 +16,14 @@
 
 @font-face {
   font-family: Inter;
-  src: url('../fonts/Inter.ttf') format('truetype');
+  src: url('../fonts/Inter.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: LeagueGothic;
-  src: url('../fonts/LeagueGothic.ttf') format('truetype');
+  src: url('../fonts/LeagueGothic.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
@@ -125,7 +125,8 @@ body {
 }
 
 .featured-card__image-wrapper {
-  max-width: 620px;
+  width: 620px;
+  height: 381px;
   overflow: hidden;
 }
 
@@ -251,6 +252,7 @@ body {
 
 .mini-card__image-wrapper {
   width: 200px;
+  height: 142px;
   display: flex;
   justify-content: center;
   background-color: #dfdee7;
