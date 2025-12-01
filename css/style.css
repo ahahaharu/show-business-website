@@ -126,7 +126,7 @@ body {
 
 .featured-card__image-wrapper {
   width: 620px;
-  height: 381px;
+  max-height: 409px;
   overflow: hidden;
 }
 
@@ -252,7 +252,7 @@ body {
 
 .mini-card__image-wrapper {
   width: 200px;
-  height: 142px;
+  height: 124px;
   display: flex;
   justify-content: center;
   background-color: #dfdee7;
@@ -282,7 +282,7 @@ body {
 .grid-card {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
   cursor: pointer;
 }
 
@@ -308,7 +308,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   line-height: 1.4;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
 }
 
 .grid-card:hover .grid-card__title {
