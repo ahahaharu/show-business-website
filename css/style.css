@@ -2,7 +2,7 @@
   font-family: Poppins;
   src: url('../fonts/Poppins-SemiBold.ttf') format('truetype');
   font-weight: 600;
-  font-style: normal;
+  font-style: semibold;
   font-display: swap;
 }
 
@@ -53,6 +53,7 @@ body {
 }
 
 .header__inner {
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -66,14 +67,19 @@ body {
   color: var(--light-green);
   text-decoration: none;
   margin-left: 8px;
-  margin-right: 35px;
+}
+
+.header__menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__menu-list {
   font-family: Inter;
   font-weight: 400;
   display: flex;
-  gap: 31px;
+  gap: 33px;
 }
 
 .header__menu-link {
@@ -96,7 +102,6 @@ body {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin-left: 142px;
 }
 
 .header__button:hover {
@@ -108,6 +113,10 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 0;
+}
+
+.news-row-reversed {
+  flex-direction: row-reverse;
 }
 
 .featured-card {
@@ -136,7 +145,7 @@ body {
   font-family: LeagueGothic;
   font-size: 72px;
   font-weight: 400;
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.08rem;
   margin-bottom: 30px;
 }
 
@@ -160,7 +169,7 @@ body {
   line-height: 1.6;
   color: var(--light-green);
   margin-left: 48px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .mini-card {
@@ -198,7 +207,7 @@ body {
 .mini-card__description {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 8px;
   max-width: 355px;
 }
 
@@ -257,7 +266,7 @@ body {
 }
 
 .news-grid {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .news-grid__list {
@@ -265,7 +274,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-row-gap: 37px;
 }
 
 .grid-card {
@@ -311,11 +320,11 @@ body {
 
 .footer {
   border-top: 1px #000 solid;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .footer__inner {
-  padding: 85px 0;
+  padding: 82px 0;
 }
 
 .footer__logo {
@@ -331,7 +340,7 @@ body {
   flex-wrap: wrap;
   list-style: none;
   text-transform: uppercase;
-  margin-top: 32px;
+  margin-top: 33px;
 }
 
 .footer__item {
