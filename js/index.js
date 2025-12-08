@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.classList.toggle('is-active');
       menu.classList.toggle('is-active');
       body.classList.toggle('no-scroll');
+
+      const isActive = burger.classList.contains('is-active');
+      burger.setAttribute('aria-expanded', isActive);
     });
 
     menu.querySelectorAll('.header__menu-link').forEach((link) => {
