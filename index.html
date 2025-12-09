@@ -3,9 +3,805 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get the latest breaking news from the world of Show Business. Exclusive stories about Royal Family, celebrity weddings, divorces, and Hollywood stars."
+    />
     <title>Show Business</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="preload"
+      href="fonts/LeagueGothic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Poppins-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1>
+          <a href="/" class="header__logo logo">SHOW BUSINESS</a>
+        </h1>
+
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Explore</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Inspiration</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Contact us</a>
+            </li>
+          </ul>
+          <button class="header__button header__button--mobile">Log in</button>
+        </nav>
+        <button class="header__button button header__button--desktop">
+          Log in
+        </button>
+
+        <button class="header__burger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="news-row">
+          <h2 class="visually-hidden">Breaking News</h2>
+          <article class="featured-card">
+            <div class="featured-card__image-wrapper">
+              <img
+                src="images/wedding.webp"
+                width="620"
+                height="409"
+                alt="Princess Beatrice Wedding"
+                class="featured-card__image"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="featured-card__content">
+              <h2 class="featured-card__title">Princess Beatrice's Wedding</h2>
+              <p class="featured-card__text">
+                Coverage of Princess Beatrice's wedding to Edoardo Mapelli Mozzi
+                in July 2020. Coverage of Princess Beatrice's wedding to Edoardo
+                Mapelli.
+              </p>
+            </div>
+          </article>
+
+          <aside class="news-list">
+            <h3 class="news-list__title">Top Stories</h3>
+
+            <article class="mini-card">
+              <span class="mini-card__number">1</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Kim Kardashian and Kanye West Divorce
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    src="images/kim.webp"
+                    width="183"
+                    height="124"
+                    alt="Kim Kardashian and Kanye West"
+                    class="mini-card__image"
+                    fetchpriority="high"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">2</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Prince Harry and Meghan Markle's Exit from Royal Duties
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mini-card__image-wrapper">
+                  <img
+                    src="images/princeHarry.webp"
+                    width="200"
+                    height="124"
+                    alt="Prince Harry and Meghan Markle"
+                    class="mini-card__image"
+                    fetchpriority="high"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">3</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Adele's weight extremal loss transformation
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    src="images/adele.webp"
+                    width="200"
+                    height="124"
+                    alt="Adele"
+                    class="mini-card__image"
+                    fetchpriority="high"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">4</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Bennifer Reunion (Jennifer Lopez and Ben Affleck)
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    src="images/bennifer.webp"
+                    width="200"
+                    height="124"
+                    alt="Jennifer Lopez and Ben Affleck"
+                    class="mini-card__image"
+                    fetchpriority="high"
+                  />
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="news-row news-row-reversed">
+          <h2 class="visually-hidden">Top of the week</h2>
+          <article class="featured-card">
+            <div class="featured-card__image-wrapper">
+              <img
+                src="images/prince-philip.webp"
+                width="620"
+                height="409"
+                alt="Prince Philip"
+                class="featured-card__image"
+              />
+            </div>
+            <div class="featured-card__content">
+              <h2 class="featured-card__title">Prince Philip's Passing</h2>
+              <p class="featured-card__text">
+                Reflections and tributes following the death of Prince Philip,
+                Duke of Edinburgh, in April 2021.
+              </p>
+            </div>
+          </article>
+
+          <aside class="news-list">
+            <h3 class="news-list__title">Top Stories</h3>
+
+            <article class="mini-card">
+              <span class="mini-card__number">1</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">Taylor Swift's Re-Recordings</h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    src="images/taylor.webp"
+                    alt="Taylor Swift"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">2</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Prince Harry and Meghan Markle's Oprah Interview Fallout
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Prince Harry and Meghan Markle"
+                    src="images/prince-harry-interview.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">3</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Kanye West's Donda Album Release and Public Statements
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Donda Album"
+                    src="images/donda-album.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">4</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Britney Spears' <br />Conservatorship Battle
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Britney Spears"
+                    src="images/britney-spears.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="news-row">
+          <h2 class="visually-hidden">Trending News</h2>
+          <article class="featured-card">
+            <div class="featured-card__image-wrapper">
+              <img
+                src="images/lady-gaga.webp"
+                width="620"
+                height="381"
+                alt="Lady Gaga"
+                class="featured-card__image"
+              />
+            </div>
+            <div class="featured-card__content">
+              <h2 class="featured-card__title">
+                Lady Gaga in 'House of Gucci'
+              </h2>
+              <p class="featured-card__text">
+                News and reviews surrounding Lady Gaga's performance in the film
+                "House of Gucci," where she portrays Patrizia Reggiani. Lady
+                Gaga's performance.
+              </p>
+            </div>
+          </article>
+
+          <aside class="news-list">
+            <h3 class="news-list__title">Top Stories</h3>
+
+            <article class="mini-card">
+              <span class="mini-card__number">1</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Queen Elizabeth II's Platinum Jubilee Celebrations
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    src="images/queen-elizabeth.webp"
+                    alt="Queen Elizabeth II"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">2</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Prince William and Kate Middleton's Public Engagements
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Prince William and Kate Middleton"
+                    src="images/prince-william.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">3</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Prince Harry and Meghan Markle's Activities
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Prince Harry and Meghan Markle"
+                    src="images/prince-harry-activities.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">4</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Royal Family Responses to Controversies
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Royal Family"
+                    src="images/royal-family.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="news-row news-row-reversed">
+          <h2 class="visually-hidden">Featured Stories</h2>
+          <article class="featured-card">
+            <div class="featured-card__image-wrapper">
+              <img
+                src="images/the-rock.webp"
+                width="620"
+                height="381"
+                alt="The Rock"
+                class="featured-card__image"
+              />
+            </div>
+            <div class="featured-card__content">
+              <h2 class="featured-card__title">
+                'The Rock' Johnson's Projects
+              </h2>
+              <p class="featured-card__text">
+                Updates on Dwayne Johnson's upcoming film and television
+                projects, as well as his business ventures and philanthropic
+                activities. Well as his business ventures and philanthropic
+                activities.
+              </p>
+            </div>
+          </article>
+
+          <aside class="news-list">
+            <h3 class="news-list__title">Top Stories</h3>
+
+            <article class="mini-card">
+              <span class="mini-card__number">1</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    The Royal Family's Social Media Presence
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    src="images/royal-familys-social-media.webp"
+                    alt="The Royal Family"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">2</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Zendaya's Career Achievements
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Zendaya"
+                    src="images/zendaya.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">3</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">
+                    Prince William's Earthshot Prize Initiative
+                  </h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Prince William"
+                    src="images/prince-william-prize.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="mini-card">
+              <span class="mini-card__number">4</span>
+              <div class="mini-card__content">
+                <div class="mini-card__description">
+                  <h4 class="mini-card__title">Chris Pratt's Film Projects</h4>
+                  <div class="mini-card__author">DAVID PIERCE</div>
+                  <div class="mini-card__data">
+                    <time datetime="10:00" class="mini-card__time"
+                      >10:00 AM</time
+                    >
+                    <div class="mini-card__comments">
+                      <img alt="" src="images/Chat.svg" /><span>87</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mini-card__image-wrapper">
+                  <img
+                    alt="Chris Pratt"
+                    src="images/chris-pratt.webp"
+                    class="mini-card__image"
+                  />
+                </div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="news-grid">
+          <h2 class="visually-hidden">More News</h2>
+          <div class="news-grid__list">
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/ryan-blake.webp"
+                  alt="Ryan Reynolds and Blake Lively"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">
+                  Ryan Reynolds and Blake Lively's Philanthropy
+                </h3>
+                <p class="grid-card__text">
+                  Updates on the philanthropic activities of Ryan Reynolds.
+                </p>
+              </div>
+            </article>
+
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/prince-andrew.webp"
+                  alt="Prince Andrew"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">Prince Andrew's Legal Issues</h3>
+                <p class="grid-card__text">
+                  Ongoing coverage of legal matters involving Prince Andrew.
+                </p>
+              </div>
+            </article>
+
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/reese-witherspoon.webp"
+                  alt="Reese Witherspoon"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">
+                  Reese Witherspoon's Production Ventures
+                </h3>
+                <p class="grid-card__text">
+                  News on Leonardo DiCaprio's ongoing environmental.
+                </p>
+              </div>
+            </article>
+
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/queen-elizabeths-health.webp"
+                  alt="Queen Elizabeth"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">
+                  Queen Elizabeth II's Health Updates
+                </h3>
+                <p class="grid-card__text">
+                  Periodic updates on the health of Queen Elizabeth II.
+                </p>
+              </div>
+            </article>
+
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/prince-harry-memoir.webp"
+                  alt="Prince Harry's Memoir"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">
+                  Prince Harry's Memoir Announcement
+                </h3>
+                <p class="grid-card__text">
+                  Reports on Prince Harry's announcement of a forthcoming.
+                </p>
+              </div>
+            </article>
+
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/leonardo-dicaprio.webp"
+                  alt="Leonardo DiCaprio"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">
+                  Leonardo DiCaprio's Environmental Advocacy
+                </h3>
+                <p class="grid-card__text">
+                  News on Leonardo DiCaprio's ongoing environmental advocacy.
+                </p>
+              </div>
+            </article>
+
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/princess-eugenie.webp"
+                  alt="Princess Eugenie"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">
+                  Princess Eugenie's Pregnancy Announcement
+                </h3>
+                <p class="grid-card__text">
+                  News about Princess Eugenie, daughter of Prince Andrew.
+                </p>
+              </div>
+            </article>
+
+            <article class="grid-card">
+              <div class="grid-card__image-wrapper">
+                <img
+                  src="images/emma-stone.webp"
+                  alt="Emma Stone"
+                  class="grid-card__image"
+                />
+              </div>
+              <div class="grid-card__content">
+                <h3 class="grid-card__title">Emma Stone's Role in "Cruella"</h3>
+                <p class="grid-card__text">
+                  Coverage of Emma Stone's role as the iconic Disney villain.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="/" class="footer__logo">Logo</a>
+
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Tip Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Community Guidelines</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Ethics Statement</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <button id="scroll-button" title="Up">
+      <img src="images/arrow-upward.svg" alt="" class="scroll-button__arrow" />
+    </button>
+    <script src="js/index.js"></script>
+  </body>
 </html>
